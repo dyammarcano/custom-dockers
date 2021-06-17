@@ -121,5 +121,7 @@ ENV NVM_SYMLINK_CURRENT=true \
 RUN if [ "$INSTALL_NODE" = "true" ]; then bash /tmp/library-scripts/node-debian.sh "${NVM_DIR}" "${NODE_VERSION}" "${USERNAME}"; fi \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
+RUN yarn global add vue@next @vue/cli
+
 # Remove library scripts for final image
 RUN rm -rf /tmp/library-scripts

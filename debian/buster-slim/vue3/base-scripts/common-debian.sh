@@ -75,6 +75,7 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
 
     PACKAGE_LIST="apt-utils \
         git \
+        tree \
         openssh-client \
         gnupg2 \
         iproute2 \

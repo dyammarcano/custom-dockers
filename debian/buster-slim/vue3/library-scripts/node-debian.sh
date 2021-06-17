@@ -117,6 +117,6 @@ export NVM_DIR="${NVM_DIR}"
 [ -s "\$NVM_DIR/bash_completion" ] && . "\$NVM_DIR/bash_completion"
 EOF
 )"
-fi 
+fi
 
 echo "Done!"
